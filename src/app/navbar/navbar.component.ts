@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
+  mobileNav:boolean = false;
   constructor(private router:Router) { }
 
   ngOnInit(): void {
@@ -18,7 +18,11 @@ export class NavbarComponent implements OnInit {
     if(link !== ''){
       this.router.navigate([link])
     }
-    
+    this.mobileNav = false;
+  }
+
+  openNav(){
+    this.mobileNav = !this.mobileNav;
   }
 
 }
