@@ -23,6 +23,8 @@
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    max-width: 100%;
+    width: 50%;
 }
 .introText .heading{
     color: #0F298B;
@@ -48,10 +50,17 @@
     // color: #0F298B;
     box-shadow: 24px 24px 48px 0px rgba(0, 0, 0, 0.10);
 }
+.introImg{
+    max-width: 100%;
+    width: 50%;
+}
+.introImg img{
+    width: 100%;
+}
 
 
 .Working{
-    padding: 20px;
+    // padding: 20px;
     background-color: #FAFAFA;
     width: 100%;
     height: 100%;
@@ -70,6 +79,8 @@
 }
 .workText{
     font-size: 22px;
+    max-width: 600px;
+    text-align: center;
 }
 .cards{
     display: flex;
@@ -120,13 +131,20 @@
     margin-bottom: 140px;
     width: 80%;
 }
+.left{
+    max-width: 100%;
+    width: 50%;
+}
+.left img{
+    width: 100%;
+}
 .right{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
     align-items: center;
     max-width: 100%;
-    // width: 35%;
+    width: 40%;
 }
 .rightHeading{
     color: #0F298B;
@@ -145,4 +163,61 @@
 }
 .featureText img{
     margin-right: 10px;
+}
+
+
+
+
+.featuredCard{
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    row-gap: 20px;
+    box-shadow: 24px 24px 48px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+}
+.featuredCard:hover{
+    transform: translateY(-9px);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.featuredCardImage{
+    width: 100%;
+}
+.featuredCardImage img{
+    width: 100%;
+}
+.featuredCardText{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+// CSS for smaller screens 
+@media only screen and (max-width:1440px){
+    .introText .heading{
+        font-size: 47px;
+    }
+    .workCard{
+        width: 265px;
+        height: 320px;
+    }
+    .Working,.chooseus,.intro{
+        width: 90%;
+    }
 }

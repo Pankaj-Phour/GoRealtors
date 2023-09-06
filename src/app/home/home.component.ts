@@ -12,9 +12,9 @@ works:any = [
   {image:'assets/secure.png'},
 ];
 featured:any = [
-  {image:'assets/locationMarker.png'},
-  {image:'assets/payment.png'},
-  {image:'assets/secure.png'},
+  {image:'assets/feature1.svg'},
+  {image:'assets/feature2.svg'},
+  {image:'assets/feature3.svg'},
 ]
   constructor() { }
 
