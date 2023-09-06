@@ -4,7 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000000;
+    // background-color: #000000;
+    background-color: #fff;
     padding: 10px;
 
 }
@@ -33,14 +34,15 @@
 }
 .link{
     // color: #ffffff;
-    color: #5cd32b;
+    // color: #5cd32b;
+    color: #0F298B;
     font-family: 'Roboto';
     font-size: 19px;
     font-weight: 500;
     border-bottom: 2px solid transparent;
 }
 .link:hover{
-    border-bottom: 2px solid #5cd32b;
+    border-bottom: 2px solid #0F298B;
     transform: translateY(-3px);
     cursor: pointer;
     transition: 0.5s ease-in-out;
@@ -68,7 +70,8 @@
         flex-direction: column;
         max-width: 100%;
         width: 50%;
-        background-color: #000;
+        // background-color: #000;
+        background-color: #fff;
         z-index: 10;
         row-gap: 20px;
         padding: 10px;
