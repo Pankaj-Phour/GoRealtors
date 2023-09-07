@@ -30,10 +30,23 @@
 .heading{
     font-size: 25px;
 }
+.logo{
+    font-size: 35px;
+}
 .list{
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+}
+.listItem{
+    width: fit-content;
+    border-bottom: 2px solid transparent;
+}
+.listItem:hover{
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    transform: translateY(-4px);
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -51,5 +64,10 @@
     .footer{
         text-align: center;
         width: 100%;
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
