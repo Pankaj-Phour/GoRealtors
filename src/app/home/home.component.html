@@ -1,7 +1,84 @@
 <div class="body">
-    <div class="container">
+    <div class="container" (click)="removeSideNav()">
         <div class="intro">
-            
+            <div class="introText">
+                <div class="heading">Helping you find the property of your dreams.</div>
+                <div>Creating quality urban lifestyles, building stronger communities</div>
+                <button class="contactButton">Get Started</button>
+            </div>
+            <div class="introImg">
+                <img src="assets/scenery.svg">
+            </div>
         </div>
+
+        <div class="Working">
+            <div class="workHeading">How it works</div>
+            <div class="workText">This is how our product works</div>
+            <div class="cards">
+            <div class="workCard" *ngFor="let work of works">
+                <div class="workCardImage">
+                    <img [src]="work.image" height="100%" width="100%">
+                </div>
+                <div class="workCardHeading">
+                    Find Home
+                </div>
+                <div class="workCardText">
+                    Our properties are located at prime areas where by there won’t be problem with transportation 
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="chooseus">
+            <div class="left">
+                <img src="assets/scenery2.svg">
+            </div>
+            <div class="right">
+                <div class="rightHeading">Why you should choose us.</div>
+                <div class="rightText">Creating quality urban lifestyles, building stronger communities</div>
+                <div class="features">
+                    <div class="featureText">
+                       <img src="assets/checkbox.svg"> World class
+                    </div>
+                    <div class="featureText">
+                        <img src="assets/checkbox.svg">  World class
+                    </div>
+                </div>
+                <div class="features">
+                    <div class="featureText">
+                        <img src="assets/checkbox.svg"> World class
+                    </div>
+                    <div class="featureText">
+                        <img src="assets/checkbox.svg">  World class
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="Working">
+            <div class="workHeading">Our Featured Properties</div>
+            <div class="workText">One of our biggest product to be featured and that has sold out the most.</div>
+            <div class="cards">
+                <div class="featuredCard" *ngFor="let feature of featured">
+                    <div class="featuredCardImage">
+                        <img [src]="feature.image">
+                    </div>
+                    <div class="featuredCardText">
+                        <div>Raheja Atharva</div>
+                        <div>Starting at</div>
+                    </div>
+                    <div class="featuredCardText">
+                        <div>Sector 110 gurgaon</div>
+                        <div>Rs. 59L*</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 </div>
+<app-footer></app-footer>

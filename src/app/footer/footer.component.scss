@@ -1,0 +1,73 @@
+.body{
+    max-width: 100%;
+    width: 100%;
+    background-color: #0F298B;
+    color: white;
+    font-family: 'Roboto';
+    padding: 20px;
+    padding-block: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.container{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer{
+    max-width: 100%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.heading{
+    font-size: 25px;
+}
+.logo{
+    font-size: 35px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.listItem{
+    width: fit-content;
+    border-bottom: 2px solid transparent;
+}
+.listItem:hover{
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    transform: translateY(-4px);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+// CSS for mobile devices 
+
+@media only screen and (max-width:600px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .footer{
+        text-align: center;
+        width: 100%;
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
