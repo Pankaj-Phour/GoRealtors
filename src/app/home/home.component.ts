@@ -21,4 +21,8 @@ featured:any = [
   ngOnInit(): void {
   }
 
+  removeSideNav(){
+    console.log("Hello  from remove nav function");
+    
+  }
 }
