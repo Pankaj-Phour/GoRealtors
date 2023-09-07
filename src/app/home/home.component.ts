@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-home',
@@ -16,13 +17,15 @@ featured:any = [
   {image:'assets/feature2.svg'},
   {image:'assets/feature3.svg'},
 ]
-  constructor() { }
+  constructor(private _api:ApiService) { }
 
   ngOnInit(): void {
   }
 
+
+  // This function is to remove the sidebar while clicking on the home page anywhere outside the sidebar 
   removeSideNav(){
     console.log("Hello  from remove nav function");
-    
+    this._api.closeSideBar(true)
   }
 }

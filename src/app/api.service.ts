@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable, Output } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -6,4 +6,10 @@ import { Injectable } from '@angular/core';
 export class ApiService {
 
   constructor() { }
+
+  @Output() closeSidebarEmitter = new EventEmitter();
+
+  closeSideBar(data:boolean){
+    this.closeSidebarEmitter.emit(data)
+  }
 }
