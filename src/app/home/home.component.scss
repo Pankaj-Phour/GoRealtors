@@ -249,4 +249,12 @@
         row-gap: 20px;
         align-items: center;
     }
+    .chooseus{
+        display: flex;
+        flex-direction: column;
+    }
+    .left,.right{
+        width: 100%;
+        text-align: center;
+    }
 }
