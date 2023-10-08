@@ -25,7 +25,7 @@ export class TeamComponent implements OnInit {
     {
       name:'Mr. Arpit Tyagi',
     details:'Mr. Arpit is one of our senior team members and co-founder of GoRealtors. They have helped more than 200 families in finding their dream house with their pocket friendly prices. He was formarly working in Raheja Atharva as CRM. Mr. Suraj is having a total experience of around 8-10 years in the field of realestate.',
-    image:'https://scontent.fdel10-1.fna.fbcdn.net/v/t1.18169-9/395527_223063954443720_251683273_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=pLHfsfs-JpAAX_fzMY-&_nc_ht=scontent.fdel10-1.fna&oh=00_AfC8tm2LPqzhoDwVWznQUAuosT5D434bimEIQdm4ykpyig&oe=654A28CA'
+    image:'assets/arpit.jpg'
   },
   ]
   constructor() { }

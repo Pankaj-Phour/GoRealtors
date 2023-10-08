@@ -8,9 +8,11 @@
 .container{
     width: 100%;
     height: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .content{
     width: 100%;
@@ -49,7 +51,7 @@
     height: 100%;
 }
 .right{
-    row-gap: 15px;
+    row-gap: 30px;
 }
 .right .name{
     font-size: 35px;
@@ -78,4 +80,10 @@
 .link img:hover{
     transform: translateY(-3px);
     transition: 0.3s ease-in-out;
+}
+
+
+.footer{
+    width: 100%;
+    margin-top: 50px;
 }
