@@ -1,11 +1,12 @@
-.body{
+.body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
 }
-.container2{
+
+.container2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,14 +14,16 @@
     width: 100%;
     flex-direction: column;
 }
-.upper{
+
+.upper {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
 }
-.image{
+
+.image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +36,8 @@
     justify-content: center;
     align-items: center;
 }
-.search{
+
+.search {
     max-width: 100%;
     max-height: 100%;
     height: 50%;
@@ -43,35 +47,43 @@
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
-    .heading{
+
+    .heading {
         font-size: 54px;
         font-weight: 600;
     }
-    .subHeading{
+
+    .subHeading {
         font-size: 18px;
         font-weight: 500;
     }
-    .input{
+
+    .input {
         width: 100%;
         padding: 10px;
         // position: relative;
         display: flex;
         justify-content: space-around;
     }
-    .input input{
+
+    .input input {
         width: 85%;
         padding: 20px;
         border-top-left-radius: 20px;
-        border-bottom-left-radius:20px;
+        border-bottom-left-radius: 20px;
         border: 2px solid gray;
+        border-right: none;
         color: gray;
         // outline: 2px solid #0F298B;
     }
-    .input input:focus{
+
+    .input input:focus {
         border: 2px solid #0F298B;
+        border-right: none;
         outline: none;
     }
-    .submitButton{
+
+    .submitButton {
         // position: absolute;
         // transform: translate(-50%,-50%);
         // left: 93%;
@@ -79,45 +91,54 @@
         width: 15%;
         // border: 2px solid gray;
     }
-    button{
+
+    button {
         padding: 20px;
         padding-inline: 40px;
         background-color: #0F298B;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        border: 2px solid gray;
+        border: 2px solid #0F298B;
+        border-left: none;
     }
 }
 
 
 
-.projects{
+.projects {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     align-items: center;
+    row-gap: 10px;
     margin-top: 70px;
-    .heading{
+    width: 100%;
+
+    .heading {
         font-size: 45px;
         font-weight: 600;
     }
-    .subHeading{
+
+    .subHeading {
         font-size: 24px;
         font-weight: 500;
     }
 }
-.cardContainer{
+
+.cardContainer {
+    width: 100%;
     display: flex;
     // flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 
 }
-.card{
+
+.card {
     margin: 15px;
-    height: 430px;
+    height: 420px;
     width: 400px;
     background-color: whitesmoke;
     display: flex;
@@ -126,38 +147,136 @@
     padding-bottom: 10px;
     border-radius: 20px;
     row-gap: 10px;
-    .topImage img{
+
+    .topImage img {
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
     }
-    .name{
+
+    .name {
         font-size: 21px;
         font-weight: 500;
-        padding-inline: 10px;
+        padding-inline: 20px;
     }
-    .details{
+
+    .details {
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: gray;
-        padding-inline: 10px;
+        padding-inline: 20px;
     }
-    .details .type{
+
+    .details .type {
         display: flex;
         column-gap: 8px;
     }
-    .lower{
-        padding-inline: 10px;
+    .details .type img{
+        height: 20px !important;
+    }
+    hr{
+        background-color: gray;
+    }
+
+    .lower {
+        padding-inline: 20px;
         display: flex;
         justify-content: space-between;
     }
-    .more{
+
+    .more {
         cursor: pointer;
         color: #0F298B;
         border-bottom: 2px solid #0F298B;
     }
-    .more:hover{
+
+    .more:hover {
         transform: translateY(-3px);
         transition: 0.3s ease-in-out;
+    }
+}
+
+
+.contactSection{
+    margin-top: 70px;
+    width: 100%;
+    .submitButton{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .submitButton button{
+        border-radius: 20px;
+        font-size: 21px;
+    }
+    .submitButton button:hover{
+        box-shadow: 0px 0px 4px 4px rgba(255,255,255,0.5);
+    }
+}
+
+.footer{
+    margin-top: 70px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+// CSS for smaller screens 
+@media only screen and (max-width:768px) {
+    .image {
+        height: 400px;
+    }
+
+    .search {
+        width: 100%;
+        padding: 15px;
+
+        .heading {
+            font-size: 28px;
+            font-weight: 500;
+        }
+
+        .subHeading {
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        .input {
+            padding: 0px;
+        }
+
+        .input input {
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .submitButton {
+            width: auto;
+        }
+
+        .submitButton button {
+            padding: 10px;
+            padding-inline: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+    .projects{
+        padding-inline: 15px;
+    }
+    .card{
+        height: 350px;
+        width: 320px;
+
+        .details .type{
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-between;
+        }
     }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
+@Output() targetId = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  scrollToTarget(id:any){
+    this.targetId.emit(id)
   }
 
 }

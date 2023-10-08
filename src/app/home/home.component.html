@@ -1,6 +1,6 @@
 <div class="body">
     <div class="container2">
-        <div class="upper">
+        <div class="upper" id="upper">
             <div class="image">
                 <div class="search" [formGroup]="searchForm">
                     <div class="heading">
@@ -21,7 +21,7 @@
         </div>
 
 
-        <div class="projects" *ngFor="let project of projects">
+        <div class="projects" *ngFor="let project of projects" [id]="project.id">
             <div class="heading">{{project.heading}}</div>
             <div class="subHeading">{{project.subHeading}}</div>
             <div class="cardContainer">
@@ -53,6 +53,29 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="contactSection">
+            <div class="image">
+                <div class="search" [formGroup]="searchForm">
+                    <div class="heading">
+                        Find your dream home
+                    </div>
+                    <div class="subHeading">
+                        Find New & Featured Property Located In Gurgaon & NCR.
+                    </div>
+                    <div class="input">
+                        <div class="submitButton"
+                        (click)="search()">
+                            <button>Contact us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <app-footer (targetId)="scrollToTarget($event)"></app-footer>
         </div>
     </div>
 </div>

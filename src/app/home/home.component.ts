@@ -24,17 +24,20 @@ projects:any = [
   {
     heading:'Ready to move',
   subHeading:'Explore Ready to move projects near delhi and NCR',
-  cards:[1,2,3]
+  cards:[1,2,3],
+  id:'readyToMove'
 },
   {
     heading:'Under construction',
   subHeading:'Explore Ready to move projects near delhi and NCR',
-  cards:[1,2,3]
+  cards:[1,2,3],
+  id:'underConstruction'
 },
   {
     heading:'Upcoming projects',
   subHeading:'Explore Ready to move projects near delhi and NCR',
-  cards:[1,2,3]
+  cards:[1,2,3],
+  id:'upcomingProjects'
 },
 ]
   constructor(private _api:ApiService,private _fb:FormBuilder) { }
@@ -57,5 +60,10 @@ projects:any = [
 
   search(){
     console.log(this.searchForm.value)
+  }
+
+  scrollToTarget(id:any){
+    let element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth", block: "start" })
   }
 }
