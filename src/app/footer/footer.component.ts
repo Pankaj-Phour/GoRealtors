@@ -16,4 +16,16 @@ export class FooterComponent implements OnInit {
     this.targetId.emit(id)
   }
 
+  contact(index:number,target:string){
+    console.log(index,target);
+    if(index == 1){
+      window.open(`tel:${target}`,"_blank")
+    }
+    else if(index == 2){
+      window.open(`mailTo:${target}`,"_blank")
+    }
+    else if(index == 3){
+      window.open(`https://wa.me/${target}`,"_blank")
+    }
+  }
 }
