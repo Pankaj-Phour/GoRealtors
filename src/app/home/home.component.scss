@@ -1,260 +1,163 @@
-.body,.container{
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    width: 100%;
+    background: url('https://whitecollarrealty.com/admin/assets/residential_property/experion-windchants-villa/20220823162811_slider_image_1_Experion_Windchants.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    max-width: 100%;
+    max-height: 100%;
+    height: 50%;
+    width: 70%;
+    color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    .heading{
+        font-size: 54px;
+        font-weight: 600;
+    }
+    .subHeading{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .input{
+        width: 100%;
+        padding: 10px;
+        // position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
+    .input input{
+        width: 85%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius:20px;
+        border: 2px solid gray;
+        color: gray;
+        // outline: 2px solid #0F298B;
+    }
+    .input input:focus{
+        border: 2px solid #0F298B;
+        outline: none;
+    }
+    .submitButton{
+        // position: absolute;
+        // transform: translate(-50%,-50%);
+        // left: 93%;
+        // top: 50%;
+        width: 15%;
+        // border: 2px solid gray;
+    }
+    button{
+        padding: 20px;
+        padding-inline: 40px;
+        background-color: #0F298B;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border: 2px solid gray;
+    }
+}
+
+
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    .heading{
+        font-size: 45px;
+        font-weight: 600;
+    }
+    .subHeading{
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+.cardContainer{
+    display: flex;
+    // flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    max-width: 100%;
-    width: 100%;
-    max-height: 100%;
-    height: 100%;
-    background-color: #FAFAFA;
-    padding: 30px;
-    font-family: 'Roboto';
+    flex-wrap: wrap;
+
 }
-.intro{
-    display: flex;
-    width: 80%;
-    column-gap: 40px;
-    margin-bottom: 140px;
-}
-.introText{
-    font-family: 'Roboto';
-    font-size: 24px;
+.card{
+    margin: 15px;
+    height: 430px;
+    width: 400px;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-radius: 20px;
     row-gap: 10px;
-    max-width: 100%;
-    width: 50%;
-}
-.introText .heading{
-    color: #0F298B;
-    font-size: 64px;
-}
-.contactButton{
-    padding: 10px;
-    padding-inline:15px;
-    border-radius: 10px;
-    background-color: #0F298B;
-    color: white;
-    border: 1px solid white;
-    font-weight: 500;
-    font-size: 19px;
-    width: fit-content;
-}
-.contactButton:hover{
-    cursor: pointer;
-    // transform: translateY(-3px);
-    // transition: 0.3s ease-in-out;
-    border: 1px solid #0F298B;
-    // background-color: white;
-    // color: #0F298B;
-    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.10);
-}
-.introImg{
-    max-width: 100%;
-    width: 50%;
-}
-.introImg img{
-    width: 100%;
-}
-
-
-.Working{
-    // padding: 20px;
-    background-color: #FAFAFA;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 10px;
-    margin-bottom: 140px;
-    width: 80%;
-
-}
-.workHeading{
-    font-size: 35px;
-    color: #0F298B;
-    font-weight: 600;
-}
-.workText{
-    font-size: 22px;
-    max-width: 600px;
-    text-align: center;
-}
-.cards{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 10px;
-
-}
-.workCard{
-    height: 370px;
-    width: 300px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    row-gap: 20px;
-    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.10);
-    border-radius: 10px;
-
-}
-.workCard:hover{
-    transform: translateY(-9px);
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-}
-.workCardImage{
-    width: 57px;
-    height: 95px;
-}
-.workCardHeading{
-    font-size: 22px;
-    font-weight: 500;
-    color: black;
-}
-.workCardText{
-    text-align: justify;
-}
-
-
-
-.chooseus{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 140px;
-    width: 80%;
-}
-.left{
-    max-width: 100%;
-    width: 50%;
-}
-.left img{
-    width: 100%;
-}
-.right{
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    align-items: center;
-    max-width: 100%;
-    width: 40%;
-}
-.rightHeading{
-    color: #0F298B;
-    font-size: 35px;
-    font-weight: 600;
-}
-.features{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-.featureText{
-    font-size: 19px;
-    display: flex;
-}
-.featureText img{
-    margin-right: 10px;
-}
-
-
-
-
-.featuredCard{
-    width: 300px;
-    height: 400px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    row-gap: 20px;
-    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.10);
-    border-radius: 10px;
-}
-.featuredCard:hover{
-    transform: translateY(-9px);
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-}
-.featuredCardImage{
-    width: 100%;
-}
-.featuredCardImage img{
-    width: 100%;
-}
-.featuredCardText{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-// CSS for smaller screens 
-@media only screen and (max-width:1440px){
-    .introText .heading{
-        font-size: 47px;
+    .topImage img{
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
     }
-    .workCard{
-        width: 265px;
-        height: 320px;
+    .name{
+        font-size: 21px;
+        font-weight: 500;
+        padding-inline: 10px;
     }
-    .Working,.chooseus,.intro{
-        width: 90%;
-    }
-}
-
-
-
-
-
-
-// CSS for mobile devices
-@media only screen and (max-width:600px){
-    .body,.container{
-        padding: 0px;
-    }
-    .intro{
+    .details{
         display: flex;
-        flex-direction: column-reverse;
-        width: 90%;
-    }
-    .introImg,.introText{
-        width: 100%;
-    }
-    .heading{
-        font-size: 23px;
-    }
-    .cards{
-        display: flex;
-        flex-direction: column;
-        row-gap: 20px;
+        justify-content: space-between;
         align-items: center;
+        color: gray;
+        padding-inline: 10px;
     }
-    .chooseus{
+    .details .type{
         display: flex;
-        flex-direction: column;
+        column-gap: 8px;
     }
-    .left,.right{
-        width: 100%;
-        text-align: center;
+    .lower{
+        padding-inline: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .more{
+        cursor: pointer;
+        color: #0F298B;
+        border-bottom: 2px solid #0F298B;
+    }
+    .more:hover{
+        transform: translateY(-3px);
+        transition: 0.3s ease-in-out;
     }
 }
