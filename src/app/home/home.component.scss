@@ -279,4 +279,22 @@
             justify-content: space-between;
         }
     }
+
+    .contactSection{
+        
+        .submitButton{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .submitButton button{
+            border-radius: 20px;
+            font-size: 21px;
+            padding-inline: 20px;
+            padding-block: 15px;
+        }
+        .submitButton button:hover{
+            box-shadow: 0px 0px 4px 4px rgba(255,255,255,0.5);
+        }
+    }
 }

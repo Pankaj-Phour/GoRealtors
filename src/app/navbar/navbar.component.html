@@ -2,11 +2,11 @@
 <div class="body">
     <div class="navbar">
         <div class="left">
-            <img src="/assets/logo.png" height="55" width="50" style="cursor: pointer;" routerLink="/">
+            <img src="/assets/goRealtors.logo.jpg" height="55" width="50" style="cursor: pointer;" routerLink="/">
         </div>
         <div class="right">
             <div class="list">
-                <div class="item" routerLink="/projects">Projects</div>
+                <div class="item" (click)="scrollTo('readyToMove')">Projects</div>
                 <div class="item" routerLink="/rent">Rent</div>
                 <div class="item" routerLink="/team">Team</div>
                 <div class="item" routerLink="/about">About</div>
@@ -19,7 +19,7 @@
 <div class="device" [ngStyle]="{'height':navOpen ? '600px' : '70px'}">
 	<div class="container">
 		<div class="left">
-            <img src="/assets/logo.png" height="55" width="50" style="cursor: pointer;" routerLink="/">
+            <img src="/assets/goRealtors.logo.jpg" height="55" width="50" style="cursor: pointer;" routerLink="/">
         </div>
 		<button id="burger" class="open-main-nav" (click)="toggleNav()" [ngStyle]="{'padding-top': navOpen ? '0px' : ''}">
 			<span class="burger" *ngIf="!navOpen"></span>
@@ -28,19 +28,19 @@
 		</button>
 		<nav class="main-nav" id="main-nav">
 			<ul>
-				<li>
+				<li (click)="scrollTo('readyToMove');toggleNav()">
 					<p>Projects</p>
 				</li>
-				<li>
+				<li (click)="toggleNav()">
 					<p>Rent</p>
 				</li>
-				<li>
+				<li (click)="toggleNav()">
 					<p>Team</p>
 				</li>
-				<li>
+				<li (click)="toggleNav()">
 					<p>About</p>
 				</li>
-				<li>
+				<li (click)="toggleNav()">
 					<p>Contact</p>
 				</li>
 			</ul>

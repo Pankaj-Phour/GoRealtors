@@ -8,7 +8,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TeamComponent } from './team/team.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
     NavbarComponent,
     ProjectsComponent,
     CarouselComponent,
-    FooterComponent
+    FooterComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
