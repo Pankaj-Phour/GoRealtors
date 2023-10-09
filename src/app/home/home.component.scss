@@ -1,206 +1,223 @@
-.body,.container{
+.body {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    max-width: 100%;
+    height: 100%;
     width: 100%;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    width: 100%;
+    background: url('https://whitecollarrealty.com/admin/assets/residential_property/experion-windchants-villa/20220823162811_slider_image_1_Experion_Windchants.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    max-width: 100%;
     max-height: 100%;
-    height: 100%;
-    background-color: #FAFAFA;
-    padding: 30px;
-    font-family: 'Roboto';
-}
-.intro{
-    display: flex;
-    width: 80%;
-    column-gap: 40px;
-    margin-bottom: 140px;
-}
-.introText{
-    font-family: 'Roboto';
-    font-size: 24px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    max-width: 100%;
-    width: 50%;
-}
-.introText .heading{
-    color: #0F298B;
-    font-size: 64px;
-}
-.contactButton{
-    padding: 10px;
-    padding-inline:15px;
-    border-radius: 10px;
-    background-color: #0F298B;
+    height: 50%;
+    width: 70%;
     color: white;
-    border: 1px solid white;
-    font-weight: 500;
-    font-size: 19px;
-    width: fit-content;
-}
-.contactButton:hover{
-    cursor: pointer;
-    // transform: translateY(-3px);
-    // transition: 0.3s ease-in-out;
-    border: 1px solid #0F298B;
-    // background-color: white;
-    // color: #0F298B;
-    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.10);
-}
-.introImg{
-    max-width: 100%;
-    width: 50%;
-}
-.introImg img{
-    width: 100%;
-}
-
-
-.Working{
-    // padding: 20px;
-    background-color: #FAFAFA;
-    width: 100%;
-    height: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+
+    .heading {
+        font-size: 54px;
+        font-weight: 600;
+    }
+
+    .subHeading {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .input {
+        width: 100%;
+        padding: 10px;
+        // position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .input input {
+        width: 85%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border: 2px solid gray;
+        border-right: none;
+        color: gray;
+        // outline: 2px solid #0F298B;
+    }
+
+    .input input:focus {
+        border: 2px solid #0F298B;
+        border-right: none;
+        outline: none;
+    }
+
+    .submitButton {
+        // position: absolute;
+        // transform: translate(-50%,-50%);
+        // left: 93%;
+        // top: 50%;
+        width: 15%;
+        // border: 2px solid gray;
+    }
+
+    button {
+        padding: 20px;
+        padding-inline: 40px;
+        background-color: #0F298B;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border: 2px solid #0F298B;
+        border-left: none;
+    }
+}
+
+
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     align-items: center;
     row-gap: 10px;
-    margin-bottom: 140px;
-    width: 80%;
-
-}
-.workHeading{
-    font-size: 35px;
-    color: #0F298B;
-    font-weight: 600;
-}
-.workText{
-    font-size: 22px;
-    max-width: 600px;
-    text-align: center;
-}
-.cards{
-    display: flex;
+    margin-top: 70px;
     width: 100%;
-    justify-content: space-between;
-    margin-top: 10px;
+
+    .heading {
+        font-size: 45px;
+        font-weight: 600;
+    }
+
+    .subHeading {
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+.cardContainer {
+    width: 100%;
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 
 }
-.workCard{
-    height: 370px;
-    width: 300px;
-    background-color: #fff;
+
+.card {
+    margin: 15px;
+    height: 420px;
+    width: 400px;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    row-gap: 20px;
-    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.10);
-    border-radius: 10px;
-
-}
-.workCard:hover{
-    transform: translateY(-9px);
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-}
-.workCardImage{
-    width: 57px;
-    height: 95px;
-}
-.workCardHeading{
-    font-size: 22px;
-    font-weight: 500;
-    color: black;
-}
-.workCardText{
-    text-align: justify;
-}
-
-
-
-.chooseus{
-    display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    row-gap: 10px;
+
+    .topImage img {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .name {
+        font-size: 21px;
+        font-weight: 500;
+        padding-inline: 20px;
+    }
+
+    .details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: gray;
+        padding-inline: 20px;
+    }
+
+    .details .type {
+        display: flex;
+        column-gap: 8px;
+    }
+    .details .type img{
+        height: 20px !important;
+    }
+    hr{
+        background-color: gray;
+    }
+
+    .lower {
+        padding-inline: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .more {
+        cursor: pointer;
+        color: #0F298B;
+        border-bottom: 2px solid #0F298B;
+    }
+
+    .more:hover {
+        transform: translateY(-3px);
+        transition: 0.3s ease-in-out;
+    }
+}
+
+
+.contactSection{
+    margin-top: 70px;
     width: 100%;
-    margin-bottom: 140px;
-    width: 80%;
+    .submitButton{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .submitButton button{
+        border-radius: 20px;
+        font-size: 21px;
+    }
+    .submitButton button:hover{
+        box-shadow: 0px 0px 4px 4px rgba(255,255,255,0.5);
+    }
 }
-.left{
-    max-width: 100%;
-    width: 50%;
-}
-.left img{
+
+.footer{
+    margin-top: 70px;
     width: 100%;
 }
-.right{
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    align-items: center;
-    max-width: 100%;
-    width: 40%;
-}
-.rightHeading{
-    color: #0F298B;
-    font-size: 35px;
-    font-weight: 600;
-}
-.features{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-.featureText{
-    font-size: 19px;
-    display: flex;
-}
-.featureText img{
-    margin-right: 10px;
-}
-
-
-
-
-.featuredCard{
-    width: 300px;
-    height: 400px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    row-gap: 20px;
-    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.10);
-    border-radius: 10px;
-}
-.featuredCard:hover{
-    transform: translateY(-9px);
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-}
-.featuredCardImage{
-    width: 100%;
-}
-.featuredCardImage img{
-    width: 100%;
-}
-.featuredCardText{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-
-
-
 
 
 
@@ -209,52 +226,75 @@
 
 
 // CSS for smaller screens 
-@media only screen and (max-width:1440px){
-    .introText .heading{
-        font-size: 47px;
+@media only screen and (max-width:768px) {
+    .image {
+        height: 400px;
     }
-    .workCard{
-        width: 265px;
-        height: 320px;
-    }
-    .Working,.chooseus,.intro{
-        width: 90%;
-    }
-}
 
-
-
-
-
-
-// CSS for mobile devices
-@media only screen and (max-width:600px){
-    .body,.container{
-        padding: 0px;
-    }
-    .intro{
-        display: flex;
-        flex-direction: column-reverse;
-        width: 90%;
-    }
-    .introImg,.introText{
+    .search {
         width: 100%;
+        padding: 15px;
+
+        .heading {
+            font-size: 28px;
+            font-weight: 500;
+        }
+
+        .subHeading {
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        .input {
+            padding: 0px;
+        }
+
+        .input input {
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .submitButton {
+            width: auto;
+        }
+
+        .submitButton button {
+            padding: 10px;
+            padding-inline: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
     }
-    .heading{
-        font-size: 23px;
+    .projects{
+        padding-inline: 15px;
     }
-    .cards{
-        display: flex;
-        flex-direction: column;
-        row-gap: 20px;
-        align-items: center;
+    .card{
+        height: 350px;
+        width: 320px;
+
+        .details .type{
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-between;
+        }
     }
-    .chooseus{
-        display: flex;
-        flex-direction: column;
-    }
-    .left,.right{
-        width: 100%;
-        text-align: center;
+
+    .contactSection{
+        
+        .submitButton{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .submitButton button{
+            border-radius: 20px;
+            font-size: 21px;
+            padding-inline: 20px;
+            padding-block: 15px;
+        }
+        .submitButton button:hover{
+            box-shadow: 0px 0px 4px 4px rgba(255,255,255,0.5);
+        }
     }
 }

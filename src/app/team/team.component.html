@@ -1,0 +1,39 @@
+<div class="body">
+    <div class="container">
+        <div class="content">
+            <div class="cardsContainer">
+            <div class="agentcard" *ngFor="let agent of agents;let i = index"[ngStyle]="{flexDirection: i%2!==1 ? 'row' : 'row-reverse'}">
+                <div class="image">
+                    <img [src]="agent.image">
+                </div>
+                <div class="right">
+                <div class="name">{{agent.name}}</div>
+                <div class="details">{{agent.details}}</div>
+                <div class="links">
+                    <div class="link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/739/739247.png" height="25px" width="25px">
+                    </div>
+                    <div class="link">
+                        <img src="https://www.freeiconspng.com/thumbs/phone-icon/office-phone-icon--25.png" height="25px" width="25px">
+                    </div>
+                    <div class="link">
+                        <img src="https://freesvg.org/img/Mail-Icon-White-on-Black.png" height="25px" width="25px">
+                    </div>
+                    <div class="link">
+                        <img src="https://clipart-library.com/new_gallery/1191341_facebook-like-png-transparent.png" height="25px" width="25px">
+                    </div>
+                    <div class="link">
+                        <img src="https://freesvg.org/img/Mail-Icon-White-on-Black.png" height="25px" width="25px">
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <app-footer></app-footer>
+
+        </div>
+    </div>
+</div>

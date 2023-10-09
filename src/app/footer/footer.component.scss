@@ -22,7 +22,7 @@
 
 .footer{
     max-width: 100%;
-    width: 18%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     row-gap: 15px;
@@ -39,6 +39,8 @@
     row-gap: 15px;
 }
 .listItem{
+    display: flex;
+    column-gap: 10px;
     width: fit-content;
     border-bottom: 2px solid transparent;
 }
