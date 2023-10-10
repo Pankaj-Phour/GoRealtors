@@ -87,3 +87,35 @@
     width: 100%;
     margin-top: 50px;
 }
+
+
+
+
+@media only screen and (max-width:768px){
+    .agentcard{
+        display: flex;
+        flex-direction: column !important;
+        max-width: 400px;
+        width: 95%;
+        height: 100%;
+    }
+    .image,.right{
+        max-width: 100%;
+        width: 100%;
+    }
+    .image{
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 20px;
+    }
+    .right{
+        align-items: center;
+    }
+}
