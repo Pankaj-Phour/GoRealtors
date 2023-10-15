@@ -1,0 +1,33 @@
+<div class="body">
+    <div class="container">
+        <div class="cardContainer">
+            <div class="card" *ngFor="let card of projects[0].cards" routerLink="singleDetails">
+                <div class="topImage">
+                    <img src="https://whitecollarrealty.com/admin/assets/residential_property/experion-windchants-villa/20220823162811_slider_image_1_Experion_Windchants.jpg">
+                </div>
+                <div class="name">Raheja Atharva</div>
+                <div class="details">
+                    <div class="type">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL0AAAELCAMAAAC77XfeAAAAbFBMVEX///8aGhoAAAD19fWqqqrKysoMDAwRERFNTU3i4uJmZmYYGBgUFBQ3Nze8vLynp6dycnJWVlby8vLZ2dmJiYleXl7p6enS0tJra2tEREQwMDCDg4Oenp6Xl5eysrLFxcV7e3snJycgICA0NDQ4jFlfAAAC60lEQVR4nO3b63KiMBiA4eQDsS54PqDFWmvv/x4XqSsI0S40Eei8z5/O4FjeiZUkaJUCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgB7wvLYLGvNWHyL6uGi7o5FNKJHWkUjcdkkTp6HORNLD0d+LvpCk7Zb6dsN/9aG03VLfdejTwd+0HVOXV6wftV1T16+snxzHIh9bv+OzmLF+GohEYRilP1at1n3HUL/YSZgfC5ctFz5Srd/oQBdEXZ6Dq/WvN/Hn/O5eSCv1ieiS4KXtyLvK9ZtKfHr8ve3Ke8r1K0P9cG77pLYuxOX6U1St19nq832u9Xpwfs7sTx3bZH/zvl8k6XZiPHVRvzAMffpAGn2U4DwBnK//rxLUIenk8XY9YSxf24mdjfEv1Y/M9QflXx6QiVJj0+vzUCiny7SxkMuTxca1oFS/NNdPlb6cNHptUn8e7K/8Wb6dmFivvzP2k/x4evVvUq+jYXa+/PcHa+v1nrk+HuT1cbN6nb1lCq+tjc1Q+ZpjKkvPM8nrBw3rs9pJ8XQ/f9+W6/eGwQ+2NuqzSc9xvVdYX16PL+3UvzmvV9PK4MtWWakPZu7r1byUP/xQPapXLzf5gd70qj5dFFzv8UQyz87Ro3oVz9O1STBMVyiflwmxT/VKjfxkPT/ur3vaftWXvfel3vOP63nZ7hrc7Xo/+5Mvy3s7Xe8b5tobXa43rzH7Un/odb1pidmfev/7+mV36003o25Ep2b72qfUp2ucxwly6HJ9uuk/37o3i4Lsc8XP6nzwP+QZc208G9+7rXS5l7Z+aWS3amudY4vLevc36l3Wv/muJYGzei3OFT+XsV3/XNRTTz311FNPPfXPq3e/ShN39ZLEA8cODtf3/o9/3XdGDuvtfHHjEeoLqK+B+gLqa6C+gPoaqC+gvgbqC6ivYST5p2BW6gv2FvoeGxW+gG2hXi28q0XH/z8JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJ7sL3IbO0aOGtOrAAAAAElFTkSuQmCC" height="20px" width="25px">
+                        <div class="text">2 & 3 BHK</div>
+                    </div>
+                    <div class="type">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAgVBMVEX///8AAAA/Pz8jIyMHBwdfX1/n5+cnJyf29vb7+/u3t7cKCgrq6uoPDw/h4eHw8PDDw8NnZ2fU1NSYmJgVFRWTk5OqqqqLi4t7e3vS0tJMTExEREQzMzMbGxumpqZaWlrHx8eDg4M5OTlubm68vLyHh4dTU1MtLS2np6dra2t1dXX76o/uAAAI30lEQVR4nO2daaOqKhSG1azUykqbRxv27uz+/w+8iiKEpKAI1PX5ctqlnvUqCxbT0jA6Ojo6Ojo6/n8Ep+fucByZ5qhnzcNAtTn1cFbnhfnKcX5XbRU3/m1i0uitp6pN42Ewp6oATDafIyWkP41cytJVbSET012pjITHTLWRDPjDSh0xN0e1nVX4PRYdpjncqra0nCnT80iwQ9W2lrInzJ1Y/c06XF7OFIF9SvFyvM1uOBlNHr+RYYxXytqdnxdLHz9Y+RmEV1LJYRBbftmfo+wQ1/sdwd8sx1jFfxzU1NWBjZvpFX6e269KjlvHSkrZKvnVWWLuFQvwwMFz+SqM14J1oTUWfp8seem/sb+ER+z74diYpQ9nKF1EzB1Zkt5kCttCAQM8X74++sY2a1QtqQoyLGTKOx0xy5FZwSIwAhhwFsqnBCJkyqbsuOBQrmOyNXxYzpTU0ShSfJQHU05JTBn3XWbGGFbWP5JMfzUPhYqV1X9o00XE2J4xhY/sKcPuAl5uy7X64PvbAPmf4UBfU1P1YiXrxHD08o2O0HBh9Hxu3WQ6eXM2YYhsozdVV+wUv9nHXeJof+uTN2jd9Bf83BiGOzklu/PIKeCDtcDtAH/d2rb9hRVPyVrRVACneGYfsyArLYElrZJ4Nrk5fvXBdCFnFHXGMQogrUGkPpK8g3tkONg5UnTEThHCa8CbMQX19DL9Q05XP/f1HcvR26KTxE7xL/u4QGN5yYN+ZLXHc99/hq3H9XkTVxqe5ATkM8kDdxCjILxNCGvBFSGyFQa5RYzhEdG5R4F7EqPQ2UJPahMUMTJ2T92Xzi8WuNtJwLsKvWhMnuKAJ3YQbDkBClAYH32I68ADd1DXgvuyJ6WAjltWhfktDSidcqMKN5IO/kCKgfsUfP4lzkkcC/biPfP42LEEQ5ygG8xWSXqYDjxwX2e/A102eZZzj+DHVOpFiPE4a2hV4T+n84t04IH75uX3XtkVQFGcNLOaQj4QxHbpKdYhWdEC98jOi5kR7Z7rUyF03HPcNg4uud8yHY5c6l3gvv3r5/31pD6zSX8IaV7UHE4haFgodopz9nH3zr3AEMuIbNM3I3Mnvp3nFJLXWZvXwH18iij1aio7Ir9226iB+YQ48Og/FDan9eoj/nSNiMNP2BNxWp6Q4BOyRU4Bq7sscAfFbEK0Ra6FPN/tPfb9sD01fELuuVPA9qfn49chHdv10OQ2qJivrYX0fEJW0ClgDyuPadOGsqxLuKk8ohE1hFADdxBLDrOSc/sJvUJ/M625l6IMJ+ETMjNfA/cI/TSYX+ew8bslP/aJc8fgpNZ6JXxC/NgpBq+BO42Q6jCriTlqb0yYT4ixWPivgfudFpbPwM+FAUcnaLEK5oy1nmTgHtfCkyt5nx1QirKRbEmrDDiFGGTgfqeWoqSRGWZhyMY630LGzk4DeIWQgXs6UFmYn5ptljCcAhXzpPW1UmtOIbA/8ge/WFCFYKRSmQabmpALGTEdPs2ORoH7EytaHm3owQUO8xBj7nvqCcECd3fTe0BnB6GYRXalfqlVmGg4haQjrNabatQFDf6e+DYZCTu07u35xA1j5zNZDHWO/dinWpbWaGSF686iZkaywCsEdizG5qRnXcgn02dvWkXDLySjR6uLtoljZ3FhsLtdTgxTFYJAc4KcJ6bLPkhDA2zo4Zg3/zII6wpJp6jK2rl03Kf9Nj2ltpAt1jpMQ9rQwx+4rKxlkLWFGKejacGSlcQtB3I4H/TCbFlzu7xjvzjoDDAyNCIdZme22CMkaSIEkYaeBce+S1xXj8ZAm3R66MG8VMQIAU7Sg3OfF8rQQ+sIEjK+WfnQAxj3Octefi5ICE46WS3NyzOQkDoD5NShBymTuAX+NRIS13mjA3nvXTBaxDZtL45VIyERtdpN4reerNAEgoTU+Z/TDmNhBh0bepBGMyFpMN/yUgA20HRzraDoghWt+9KLJK+aw2goxLgMH9DZwbjPVX5TmIKENLcAjPswLFVtBZFCDmIbVj7uAoWAntRE0dY4kUKCpCVcVx/XCkiIgK5DcOur2KUAmIkUohIBQhzq0INsIgFPJFkW8FBWpjKQkPo7JcEkrq24aIoQko5WqqquMkQIoQfzktnmQqL6F0mc5Kh4u7sQIdOnNVcVLEICEUJ04AuFfEL2gBK+RgjaYvV5uU9e+EIhqoOlhnyNkMG3CBnnQqRuGhTP1wiZfosQZwj5cB/p6BDOfTfsfQzD37cRVL4G8FN4M00cVJ+pG/Txpk31ibpBnyfuV5+oG/QVtxfVZvFDT3/jv885oymF5WAZpw9T8jZhlhHc9tbHsL99+PRNx6dysHWHcZ0kmWdSPxhH287VV1IM4/TTs/pKimFcfKV9LM+6GeRUfSm1sKSYSrhXX0otrIvztO9esW5fnFZfSi3Mu/4q85Mqhjk1D3MGaUUwr0Kwqq+lFOZxXN2bduZ1Jbo37czrQt6lJtUExg3ExttUmLrAnlk7qr6YSsiN2O8ZVF9MJWRulRL0HhTi2E3D+G4IRXCsytO7s8uxrKQ08bhyOJblXVTbWgrHumit+4is/cMErRsSnhc0aN214kqmQksOrQtc22SrX/qkDq5lljrPinIt7vaqr6cKvrfKaOztf9XW41S8HkUhnCvItHUSm3P/w7b6kmrgTpKm69gW984aTecWCgmPKxnr2UuskexNzwU2NVYIaDm5UCv9t46PpNYmPF+/2YWa6RC1q7gWNTcDuvR366mj9vp2v/yVurJpkGdTq2j+2mRXeVh9fVk0TNejzVTJsOluWU1WOQrI3xrpMKIyF5F1Yax8bnTxT4CMhLvSjq99E7gp3lM20bB4Cs4FNVju5DePj797G7l63MBbb259Kcyfl9NMdqK3DuU4A4SoMuxi15SWqgePJUWlIMDn9qXl1+yElNAJacLXCMEnfUXtqXGwa0pL2oy983whLITAAlN5GYfQ7Im4/FlotRvHMqamuPAVMCJzQ8O7c5Wayio82KZ9FVuYvf3ItB9r9Sn4Ojo6Ojo6OjTgP2gSjMJJZ6b8AAAAAElFTkSuQmCC" height="20px" width="25px">
+                        <div class="text">2 Bath</div>
+                        
+                    </div>
+                    <div class="type">
+                        <img src="https://static.thenounproject.com/png/70363-200.png" height="20px" width="25px">
+                        <div class="text">1300 Sq. Ft.</div>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="lower">
+                    <div class="location">Dwaarka Express way</div>
+                    <div class="more"> See more... </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

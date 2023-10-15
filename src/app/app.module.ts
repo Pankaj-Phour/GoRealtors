@@ -10,7 +10,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TeamComponent } from './team/team.component';
-import { SingleDetailsComponent } from './single-details/single-details.component'
+import { SingleDetailsComponent } from './single-details/single-details.component';
+import { AllProjectComponent } from './all-project/all-project.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SingleDetailsComponent } from './single-details/single-details.componen
     CarouselComponent,
     FooterComponent,
     TeamComponent,
-    SingleDetailsComponent
+    SingleDetailsComponent,
+    AllProjectComponent
   ],
   imports: [
     BrowserModule,

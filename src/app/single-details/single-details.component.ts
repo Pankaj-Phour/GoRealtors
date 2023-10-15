@@ -20,7 +20,8 @@ export class SingleDetailsComponent implements OnInit {
       {image:'https://img.squareyards.com/secondaryPortal/638300262714997509-1109231051115111.jpg'},
       {image:'https://raheja.com/images/raheja-atharva/sample-flat/atharva-sf-big1.jpg'},
     ]
-  }
+  };
+  interval:any;
   selectedImage:number = 0;
   constructor() { }
 
@@ -31,10 +32,12 @@ export class SingleDetailsComponent implements OnInit {
 
   selectImage(index:number){
     this.selectedImage = index;
+    clearInterval(this.interval)
+    this.slideImage();
   }
 
   slideImage(){
-    setInterval(()=>{
+   this.interval = setInterval(()=>{
       if(this.selectedImage === this.Project.allImages.length-1){
         this.selectedImage = 0;
       }

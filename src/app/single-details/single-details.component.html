@@ -3,21 +3,17 @@
         <div class="content">
             <div class="topImage">
                 <div class="mainImage">
-                    <!-- <swiper-container class="mySwiper" #swiper direction="horizontal" (slidechange)="slideChange($event)">
-                        <ng-container *ngFor="let data of Project.allImages;let i = index">
-                            <swiper-slide>
-                            <img [src]="data.image" alt="Go realtors Projects on dwarka expressway">
-                        </swiper-slide>
-                    </ng-container>
-                </swiper-container> -->
-                <swiper-container class="mySwiper" #swiper (slidechange)="slideChange($event)" pagination="true" navigation="true" direction="horizontal">
+                    
+                            <img [src]="Project.allImages[selectedImage].image" alt="Go realtors Projects on dwarka expressway">
+                        
+                <!-- <swiper-container class="mySwiper" #swiper (slidechange)="slideChange($event)" pagination="true" navigation="true" direction="horizontal">
                     <ng-container *ngFor="let data of Project.allImages">
                         <swiper-slide>
                                 <img [src]="data.image" alt="Go realtors Projects on dwarka expressway">
                                 
                             </swiper-slide>
                         </ng-container>
-                      </swiper-container>
+                      </swiper-container> -->
                 </div>
                 <div class="allImages">
                     <img [src]="data.image" height="80px" width="90px" alt="Raheja atharva images" *ngFor="let data of Project.allImages;let i = index" (click)="selectImage(i)" [ngStyle]="{'border':selectedImage === i ? '2px solid gray' : '2px solid transparent'}">
