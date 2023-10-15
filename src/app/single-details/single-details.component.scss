@@ -22,6 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .topImage{
     max-width: 100%;
@@ -33,6 +34,7 @@
     align-items: center;
     flex-direction: column;
     row-gap: 30px;
+    margin-bottom: 20px;
     .mainImage{
         // height: 600px;
         // width: 100%;
@@ -67,6 +69,43 @@
         padding: 5px;
     }
 }
+
+.title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+    padding-inline: 40px;
+    .name{
+        font-size: 32px;
+    }
+    .location{
+        display: flex;
+        color: gray;
+        font-size: 24px;
+    }
+    .location img{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //   CSS for the swiper 
 swiper-container {

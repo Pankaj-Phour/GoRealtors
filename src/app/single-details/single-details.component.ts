@@ -9,7 +9,7 @@ export class SingleDetailsComponent implements OnInit {
 
 
   Project:any = {
-    name:'',
+    name:'Raheja Atharva',
     image:'',
     allImages:[
       {image:'https://raheja.com/images/raheja-atharva/banner3.jpg'},
@@ -19,7 +19,16 @@ export class SingleDetailsComponent implements OnInit {
       {image:'https://is1-2.housingcdn.com/01c16c28/7b9b1ac34ce277d05ad375cfa416e4f1/v0/fs/3_bhk_apartment-for-rent-sector_109_gurgaon-Gurgaon-others.jpg'},
       {image:'https://img.squareyards.com/secondaryPortal/638300262714997509-1109231051115111.jpg'},
       {image:'https://raheja.com/images/raheja-atharva/sample-flat/atharva-sf-big1.jpg'},
-    ]
+    ],
+    location:'Dwarka exressway Projects',
+    available:{
+      flats:[
+        {type:'1  BHK',size:'1300 sq. ft.'},
+        {type:'1  BHK',size:'1300 sq. ft.'},
+        {type:'1  BHK',size:'1300 sq. ft.'},
+        {type:'1  BHK',size:'1300 sq. ft.'},
+      ]
+    }
   };
   interval:any;
   selectedImage:number = 0;

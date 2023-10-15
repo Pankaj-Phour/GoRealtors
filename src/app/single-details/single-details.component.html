@@ -19,6 +19,17 @@
                     <img [src]="data.image" height="80px" width="90px" alt="Raheja atharva images" *ngFor="let data of Project.allImages;let i = index" (click)="selectImage(i)" [ngStyle]="{'border':selectedImage === i ? '2px solid gray' : '2px solid transparent'}">
                 </div>
             </div>
+
+            <div class="title">
+                <div class="name">{{Project.name}}</div>
+                <div class="location">
+                    <img src="https://icons-for-free.com/iconfiles/png/512/map+marker-1325051861362825518.png" height="20px" width="40px">
+                    <div class="text">
+                        {{Project.location}}
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>
