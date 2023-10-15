@@ -24,19 +24,19 @@ projects:any = [
   {
     heading:'Ready to move',
   subHeading:'Explore Ready to move projects near delhi and NCR',
-  cards:[1,2],
+  cards:[1,2,3],
   id:'readyToMove'
 },
   {
     heading:'Under construction',
   subHeading:'Explore Ready to move projects near delhi and NCR',
-  cards:[1,2],
+  cards:[1,2,3],
   id:'underConstruction'
 },
   {
     heading:'Upcoming projects',
   subHeading:'Explore Ready to move projects near delhi and NCR',
-  cards:[1,2],
+  cards:[1,2,3],
   id:'upcomingProjects'
 },
 ]

@@ -6,7 +6,7 @@
         </div>
         <div class="right">
             <div class="list">
-                <div class="item" (click)="scrollTo('readyToMove')">Projects</div>
+                <div class="item" routerLink="all-projects">All Projects</div>
                 <div class="item" routerLink="/rent">Rent</div>
                 <div class="item" routerLink="/team">Team</div>
                 <div class="item" routerLink="/about">About</div>
@@ -29,7 +29,7 @@
 		<nav class="main-nav" id="main-nav">
 			<ul>
 				<li (click)="scrollTo('readyToMove');toggleNav()">
-					<p>Projects</p>
+					<p>All Projects</p>
 				</li>
 				<li (click)="toggleNav()">
 					<p>Rent</p>
