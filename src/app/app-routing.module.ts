@@ -5,6 +5,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
 import { TeamComponent } from './team/team.component';
+import { SingleDetailsComponent } from './single-details/single-details.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path:'team',
     component:TeamComponent
+  },
+  {
+    path:'singleDetails',
+    component:SingleDetailsComponent
   }
 ];
 

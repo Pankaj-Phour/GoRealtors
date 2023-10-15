@@ -1,0 +1,95 @@
+.body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topImage{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    .mainImage{
+        // height: 600px;
+        // width: 100%;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // transition: all 1s ease-in-out;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        overflow-x: auto;
+
+    }
+    // .mainImage img{
+    //     height: 100%;
+    //     width: 100%;
+    //     transition: all 1s ease-in-out;
+    // }
+    .allImages{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
+    .allImages img{
+        height: 60px;
+        width: 80px;
+        border-radius: 10px;
+        object-fit: cover;
+        padding: 5px;
+    }
+}
+
+//   CSS for the swiper 
+swiper-container {
+    width: 100%;
+    height: 100%;
+    // display: flex;
+    overflow-x: auto;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    // height: 100%;
+    object-fit: cover;
+  }

@@ -196,6 +196,47 @@
     }
 }
 
+.moreCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .text{
+        font-size: 55px;
+        text-align: center;
+    }
+    .icon{
+        height: 200px;
+        width: 100%;
+    }
+    .icon img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.newMore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .imageCircle{
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: gray;
+        flex-direction: column;
+    }
+    .imageCircle img{
+        height: 70%;
+        width: 80%;
+        object-fit: contain;
+    }
+}
 
 .contactSection{
     margin-top: 70px;

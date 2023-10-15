@@ -25,7 +25,7 @@
             <div class="heading">{{project.heading}}</div>
             <div class="subHeading">{{project.subHeading}}</div>
             <div class="cardContainer">
-                <div class="card" *ngFor="let card of project.cards">
+                <div class="card" *ngFor="let card of project.cards" routerLink="singleDetails">
                     <div class="topImage">
                         <img src="https://whitecollarrealty.com/admin/assets/residential_property/experion-windchants-villa/20220823162811_slider_image_1_Experion_Windchants.jpg">
                     </div>
@@ -50,6 +50,23 @@
                     <div class="lower">
                         <div class="location">Dwaarka Express way</div>
                         <div class="more"> See more... </div>
+                    </div>
+                </div>
+                <div class="moreCard card" *ngIf="false">
+                    <div class="moreData">
+                        <div class="text">View more Projects</div>
+                        <div class="icon">
+                            <img src="https://www.freeiconspng.com/uploads/right-arrow-icon-12.png" alt="Go realtors more Projects">
+                        </div>
+                    </div>
+                </div>
+                <div class="newMore">
+                    <div class="imageCircle">
+                        <img src="https://www.pngkey.com/png/full/32-320864_right-arrow-clipart-explore-pictures-right-arrow-icon.png" alt="Go realtors more Projects">
+                        
+                        <div class="moreText">
+                            View all
+                        </div>
                     </div>
                 </div>
             </div>

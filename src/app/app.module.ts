@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,7 +9,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TeamComponent } from './team/team.component'
+import { TeamComponent } from './team/team.component';
+import { SingleDetailsComponent } from './single-details/single-details.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TeamComponent } from './team/team.component'
     ProjectsComponent,
     CarouselComponent,
     FooterComponent,
-    TeamComponent
+    TeamComponent,
+    SingleDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,7 @@ import { TeamComponent } from './team/team.component'
     FormsModule,
     ReactiveFormsModule
   ],
+  schemas:[ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
   bootstrap: [AppComponent]
 })
