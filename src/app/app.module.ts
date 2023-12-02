@@ -11,7 +11,13 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TeamComponent } from './team/team.component';
 import { SingleDetailsComponent } from './single-details/single-details.component';
-import { AllProjectComponent } from './all-project/all-project.component'
+import { AllProjectComponent } from './all-project/all-project.component';
+import { ContactComponent } from './contact/contact.component';
+import { NotifyComponent } from './notify/notify.component';
+import { NotificationComponent } from './notification/notification.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -23,13 +29,19 @@ import { AllProjectComponent } from './all-project/all-project.component'
     FooterComponent,
     TeamComponent,
     SingleDetailsComponent,
-    AllProjectComponent
+    AllProjectComponent,
+    ContactComponent,
+    NotifyComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   schemas:[ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],

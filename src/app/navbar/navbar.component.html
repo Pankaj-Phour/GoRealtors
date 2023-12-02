@@ -10,7 +10,7 @@
                 <div class="item" routerLink="/rent">Rent</div>
                 <div class="item" routerLink="/team">Team</div>
                 <div class="item" routerLink="/about">About</div>
-                <button class="resumebtn">Contact</button>
+                <button class="resumebtn" routerLink="/contact">Contact</button>
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
 				<li (click)="toggleNav()">
 					<p>About</p>
 				</li>
-				<li (click)="toggleNav()">
+				<li (click)="toggleNav()" routerLink="/contact">
 					<p>Contact</p>
 				</li>
 			</ul>

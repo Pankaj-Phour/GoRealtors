@@ -1,7 +1,7 @@
 <div class="body">
     <div class="container">
         <div class="cardContainer">
-            <div class="card" *ngFor="let card of projects[0].cards" routerLink="singleDetails">
+            <div class="card" *ngFor="let card of projects[0].cards" routerLink="/single-details">
                 <div class="topImage">
                     <img src="https://whitecollarrealty.com/admin/assets/residential_property/experion-windchants-villa/20220823162811_slider_image_1_Experion_Windchants.jpg">
                 </div>
@@ -25,7 +25,7 @@
                 <hr>
                 <div class="lower">
                     <div class="location">Dwaarka Express way</div>
-                    <div class="more"> See more... </div>
+                    <div class="more" routerLink="/single-details"> See more... </div>
                 </div>
             </div>
         </div>

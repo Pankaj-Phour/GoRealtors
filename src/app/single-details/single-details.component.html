@@ -30,6 +30,34 @@
                 </div>
 
             </div>
+
+            <div class="amentities">
+                <div class="container">
+                    <div class="amentitytitle">{{Project.amentities.title}}</div>
+                    <div class="text">{{Project.amentities.text}}</div>
+                    <div class="data">
+                        <div class="card" *ngFor="let amentity of Project.amentities.data">
+                            <div class="image">
+                                <img [src]="amentity.image" alt="amentity image">
+                            </div>
+                            <div class="name">{{amentity.name}}</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="amentities availableFlats">
+                <div class="container">
+                    <div class="amentitytitle">{{Project.available.title}}</div>
+                    <div class="text">{{Project.available.text}}</div>
+                    <div class="data">
+                        <div class="flatCard" *ngFor="let flat of Project.available.flats">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
