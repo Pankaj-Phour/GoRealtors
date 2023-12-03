@@ -25,10 +25,10 @@ export class SingleDetailsComponent implements OnInit {
       title:'Available Flats',
       text : 'Click to view details of the flat',
       flats:[
-        {type:'1  BHK',size:'1300 sq. ft.'},
-        {type:'1  BHK',size:'1300 sq. ft.'},
-        {type:'1  BHK',size:'1300 sq. ft.'},
-        {type:'1  BHK',size:'1300 sq. ft.'},
+        {type:'1  BHK',size:'1300 sq. ft.',image:'https://im.proptiger.com/2/5525754/12/atharva-floor-plan-floor-plan-948031.jpeg?width=480&height=320'},
+        {type:'1  BHK',size:'1300 sq. ft.',image:'https://im.proptiger.com/2/5525754/12/atharva-floor-plan-floor-plan-948031.jpeg?width=480&height=320'},
+        {type:'3  BHK',size:'1300 sq. ft.',image:'https://im.proptiger.com/2/5525754/12/atharva-floor-plan-floor-plan-948031.jpeg?width=480&height=320'},
+        {type:'1  BHK',size:'1300 sq. ft.',image:'https://im.proptiger.com/2/5525754/12/atharva-floor-plan-floor-plan-948031.jpeg?width=480&height=320'},
       ]
     },
     amentities: {

@@ -1,3 +1,7 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
 .body{
     width: 100%;
     height: 100%;
@@ -55,11 +59,12 @@
     }
     .allImages{
         width: 100%;
-        height: 100%;
+        // height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         column-gap: 20px;
+        flex-wrap: wrap;
     }
     .allImages img{
         height: 60px;
@@ -78,13 +83,17 @@
     align-items: flex-start;
     padding: 10px;
     padding-inline: 40px;
+    row-gap: 15px;
+
     .name{
         font-size: 32px;
+        margin-left: 30px;
     }
     .location{
         display: flex;
         color: gray;
         font-size: 24px;
+        align-items: center;
     }
     .location img{
         height: 30px;
@@ -105,6 +114,8 @@
         align-items: center;
         font-family: 'Roboto';
         color: white;
+        padding: 20px;
+        row-gap: 15px;
         .amentitytitle{
             font-size: 32px;
         }
@@ -156,12 +167,49 @@
         width: 350px;
         border-radius: 10px;
         margin-bottom: 10px;
+        .image{
+            height: 200px;
+            width: 350px;
+            img{
+                height: 100%;
+                width: 100%;
+                // object-fit: contain;
+                background-color: gray;
+            }
+        }
     }
+}
+
+
+.footer{
+    width: 100%;
 }
 
 
 
 
+@media only screen and (max-width:768px){
+    .amentities{
+        .container{
+
+            .data{
+                width: 100%;
+                .card{
+                    width: 150px;
+                    height: 150px;
+                    .image{
+                        height: 128px;
+                        width: 128px;
+                        img{
+                            height: 83px;
+                            width: 83px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 

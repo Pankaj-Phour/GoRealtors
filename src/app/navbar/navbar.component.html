@@ -6,8 +6,8 @@
         </div>
         <div class="right">
             <div class="list">
+                <div class="item" routerLink="/">Home</div>
                 <div class="item" routerLink="all-projects">All Projects</div>
-                <div class="item" routerLink="/rent">Rent</div>
                 <div class="item" routerLink="/team">Team</div>
                 <div class="item" routerLink="/about">About</div>
                 <button class="resumebtn" routerLink="/contact">Contact</button>
@@ -28,11 +28,11 @@
 		</button>
 		<nav class="main-nav" id="main-nav">
 			<ul>
-				<li (click)="scrollTo('readyToMove');toggleNav()">
-					<p>All Projects</p>
+				<li (click)="toggleNav()" routerLink="/">
+					<p>Home</p>
 				</li>
-				<li (click)="toggleNav()">
-					<p>Rent</p>
+				<li (click)="toggleNav()" routerLink="/all-projects">
+					<p>All Projects</p>
 				</li>
 				<li (click)="toggleNav()" routerLink="/team">
 					<p>Team</p>
