@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+<!-- Instructions for PWA setup  -->
+First of all install @angular/pwa (version according to your project ) and then run the command "ng add @angular/pwa". It will install "@angular/service-worker" package and then set up your project for pwa.
+
+If you have finished these steps successfully then it will update your angular.json, package.json, app.module.ts, index.html, and will create some files named ngws-config.json, manifest.webmanifest, and some icons 
+
+Then you have to build your project with ng build command and after successfully building the project for production run the command npx http-server -p 8080 -c-1 dist/(name of your project dist folder) and open the browser on localhost:8080 you will see your project there 
