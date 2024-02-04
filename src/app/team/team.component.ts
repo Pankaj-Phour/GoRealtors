@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-team',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./team.component.scss']
 })
 export class TeamComponent implements OnInit {
+
+  constructor(private _api:ApiService){}
   agents:any = [
     {
       name:'Mr. Suraj Dahiya',
@@ -28,9 +31,18 @@ export class TeamComponent implements OnInit {
     image:'assets/arpit.jpg'
   },
   ]
-  constructor() { }
 
   ngOnInit(): void {
+    this.getStaffList();
+  }
+
+
+
+  getStaffList(){
+    this._api.getStaffList('/allAgents').subscribe((res:any)=>{
+      console.log("List of staff ",res);
+      
+    })
   }
 
 }

@@ -44,6 +44,7 @@ projects:any = [
 
   ngOnInit(): void {
     this.validation();
+    this.getProperties();
   }
 
   validation(){
@@ -65,5 +66,13 @@ projects:any = [
   scrollToTarget(id:any){
     let element = document.getElementById(id);
     element.scrollIntoView({ behavior: "smooth", block: "start" })
+  }
+
+
+  getProperties(){
+    this._api.getPropertyList('/allProperties').subscribe((res:any)=>{
+      console.log("Hello from api response",res);
+      
+    })
   }
 }

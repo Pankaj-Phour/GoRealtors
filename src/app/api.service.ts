@@ -29,4 +29,14 @@ export class ApiService {
   closeSideBar(data:boolean){
     this.closeSidebarEmitter.emit(data)
   }
+
+
+  getPropertyList(endpoint:String){
+    return this.http.get(environment.Url + endpoint)
+  }
+
+  getStaffList(endpoint:String){
+    return this.http.get(environment.Url + endpoint)
+  }
+  
 }
