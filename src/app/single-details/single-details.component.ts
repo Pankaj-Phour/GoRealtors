@@ -26,9 +26,9 @@ export class SingleDetailsComponent implements OnInit {
       text : 'Click to view details of the flat',
       flats:[
         {type:'1  BHK',size:'1300 sq. ft.',image:'https://im.proptiger.com/2/5525754/12/atharva-floor-plan-floor-plan-948031.jpeg?width=480&height=320'},
-        {type:'1  BHK',size:'1300 sq. ft.',image:'https://im.proptiger.com/2/5525754/12/atharva-floor-plan-floor-plan-948031.jpeg?width=480&height=320'},
+        {type:'2  BHK',size:'1300 sq. ft.',image:'https://im.proptiger.com/2/5525754/12/atharva-floor-plan-floor-plan-948031.jpeg?width=480&height=320'},
         {type:'3  BHK',size:'1300 sq. ft.',image:'https://im.proptiger.com/2/5525754/12/atharva-floor-plan-floor-plan-948031.jpeg?width=480&height=320'},
-        {type:'1  BHK',size:'1300 sq. ft.',image:'https://im.proptiger.com/2/5525754/12/atharva-floor-plan-floor-plan-948031.jpeg?width=480&height=320'},
+        {type:'4  BHK',size:'1300 sq. ft.',image:'https://im.proptiger.com/2/5525754/12/atharva-floor-plan-floor-plan-948031.jpeg?width=480&height=320'},
       ]
     },
     amentities: {
@@ -44,6 +44,8 @@ export class SingleDetailsComponent implements OnInit {
         {name : 'Hospital',image:'https://static.wixstatic.com/media/6665ff_4b1384d9f7d14921837c329b06dff7cc~mv2.jpeg/v1/fill/w_101,h_101,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/HOS.jpeg'},
         {name : 'Elevator',image:'https://cdn-icons-png.flaticon.com/512/230/230531.png'},
       ]
+
+          
     },
 
   };

@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
 
-  Url : 'https://locationapi.onrender.com'
+  Url : 'https://gorealtors.onrender.com'
 
 };
 
