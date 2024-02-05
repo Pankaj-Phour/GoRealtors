@@ -46,7 +46,7 @@ formValidation(){
 
   contact(index:any){
     if(index == 0){
-      window.open("https://github.com/Pankaj-Phour","_blank")
+      window.open(`tel:+91 7027200312`,"_blank")
     }
     else if(index == 1){
       window.open("mailTo:ashishmaan134@gmail.com","_blank")
