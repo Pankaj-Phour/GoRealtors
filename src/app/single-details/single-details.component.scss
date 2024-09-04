@@ -1,0 +1,248 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.topImage{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-bottom: 20px;
+    .mainImage{
+        // height: 600px;
+        // width: 100%;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // transition: all 1s ease-in-out;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        // overflow-x: auto;
+
+    }
+    .mainImage img{
+        height: 100%;
+        width: 100%;
+        transition: all 1s ease-in-out;
+    }
+    .allImages{
+        width: 100%;
+        // height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        flex-wrap: wrap;
+    }
+    .allImages img{
+        height: 60px;
+        width: 80px;
+        border-radius: 10px;
+        object-fit: cover;
+        padding: 5px;
+    }
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+    padding-inline: 40px;
+    row-gap: 15px;
+
+    .name{
+        font-size: 32px;
+        margin-left: 30px;
+    }
+    .location{
+        display: flex;
+        color: gray;
+        font-size: 24px;
+        align-items: center;
+    }
+    .location img{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+
+.amentities{
+    display: flex;
+    background-color: #0F298B;
+    margin-block: 50px;
+    width: 100%;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Roboto';
+        color: white;
+        padding: 20px;
+        row-gap: 15px;
+        .amentitytitle{
+            font-size: 32px;
+        }
+        .text{
+            font-size: 22px;
+        }
+        .data{
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            column-gap: 30px;
+            .card{
+                width: 200px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-bottom: 10px;
+                .image{
+
+                    width: 170px;
+                    height: 170px;
+                    border-radius: 50%;
+                    background-color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                img{
+                    height: 110px;
+                    // border-radius: 50%;
+                    width: 110px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+.availableFlats{
+    .data{
+        width: 90% !important;
+    }
+    .flatCard{
+        background-color: white;
+        height: 400px;
+        width: 350px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        .image{
+            height: 200px;
+            width: 350px;
+            img{
+                height: 100%;
+                width: 100%;
+                // object-fit: contain;
+                background-color: gray;
+            }
+        }
+    }
+}
+
+
+.footer{
+    width: 100%;
+}
+
+
+
+
+@media only screen and (max-width:768px){
+    .amentities{
+        .container{
+
+            .data{
+                width: 100%;
+                .card{
+                    width: 150px;
+                    height: 150px;
+                    .image{
+                        height: 128px;
+                        width: 128px;
+                        img{
+                            height: 83px;
+                            width: 83px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+//   CSS for the swiper 
+swiper-container {
+    width: 100%;
+    height: 100%;
+    // display: flex;
+    overflow-x: auto;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    // height: 100%;
+    object-fit: cover;
+  }

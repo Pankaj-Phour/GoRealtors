@@ -28,4 +28,8 @@ export class FooterComponent implements OnInit {
       window.open(`https://wa.me/${target}`,"_blank")
     }
   }
+
+  route(){
+    window.open('https://www.google.com/maps/place//data=!4m2!3m1!1s0x390d11dec017b5f5:0xa08c29f46bf7095e?entry=s&sa=X&ved=2ahUKEwic29qzz52EAxVUxjgGHdY1A-oQ4kB6BAgSEAA','_blank')
+  }
 }

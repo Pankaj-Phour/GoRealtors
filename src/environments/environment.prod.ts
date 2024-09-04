@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
+  production: true,
+
+Url : 'https://gorealtors.onrender.com'
+
 };

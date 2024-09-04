@@ -8,7 +8,7 @@
 
 .container2 {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
@@ -111,7 +111,7 @@
     align-items: center;
     flex-direction: column;
     align-items: center;
-    row-gap: 10px;
+    row-gap: 20px;
     margin-top: 70px;
     width: 100%;
 
@@ -138,8 +138,10 @@
 
 .card {
     margin: 15px;
-    height: 420px;
-    width: 400px;
+    // height: 420px;
+    // width: 400px;
+    height: 380px;
+    width: 360px;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -196,6 +198,53 @@
     }
 }
 
+.moreCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .text{
+        font-size: 55px;
+        text-align: center;
+    }
+    .icon{
+        height: 200px;
+        width: 100%;
+    }
+    .icon img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.newMore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    .imageCircle{
+        border-radius: 50%;
+        height: 120px;
+        width: 120px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: whitesmoke;
+        flex-direction: column;
+    }
+    .imageCircle:hover{
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.4);
+
+    }
+    .imageCircle img{
+        height: 60%;
+        width: 60%;
+        object-fit: contain;
+    }
+}
 
 .contactSection{
     margin-top: 70px;
@@ -268,6 +317,12 @@
     }
     .projects{
         padding-inline: 15px;
+        .heading{
+            font-size: 30px;
+        }
+        .subHeading{
+            font-size: 18px;
+        }
     }
     .card{
         height: 350px;

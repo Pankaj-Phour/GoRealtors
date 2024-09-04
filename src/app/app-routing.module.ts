@@ -5,6 +5,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
 import { TeamComponent } from './team/team.component';
+import { SingleDetailsComponent } from './single-details/single-details.component';
+import { AllProjectComponent } from './all-project/all-project.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
@@ -14,6 +17,10 @@ const routes: Routes = [
   {
     path:'projects',
     component:ProjectsComponent
+  },
+  {
+    path:'contact',
+    component:ContactComponent
   },
   {
     path:'carousel',
@@ -26,6 +33,14 @@ const routes: Routes = [
   {
     path:'team',
     component:TeamComponent
+  },
+  {
+    path:'single-details',
+    component:SingleDetailsComponent
+  },
+  {
+    path:'all-projects',
+    component: AllProjectComponent
   }
 ];
 

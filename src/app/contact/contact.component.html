@@ -1,0 +1,66 @@
+<div class="body">
+    <div class="container">
+        <!-- <div class="top" #top>
+            <app-navbar></app-navbar>
+        </div> -->
+        <div class="middle">
+            <div class="contact">
+                <div class="left">
+                    <div class="first">
+                    <div class="heading">
+                        Get In Touch
+                    </div>
+                    <div class="subheading">
+                        Fill your details here and we will get back to you as soon as possible
+                    </div>
+                </div>
+                    <div class="address">
+                        <div class="addressList">+91 7027200312</div>
+                        <div class="addressList"><a href="mailTo:ashishmaan134@gmail.com">ashishmaan134@gmail.com</a></div>
+                        <div class="addressList">E-193 New Palam Vihar Near Dwarka Express way</div>
+                    </div>
+                    <div class="Connect">
+                        <div class="links" (click)="contact(0)"><img src="assets/phone.png" height="30" width="30"></div>
+                        <div class="links" (click)="contact(1)"><img src="assets/email.png" height="30" width="30"></div>
+                        <div class="links" (click)="contact(2)"><img src="assets/whatsapp.png" height="30" width="30"></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="form">
+                            <form [formGroup]="contactForm">
+                                <div class="formGroup">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="input" placeholder="Enter your name" formControlName="name" >
+                                    <p class="error"  *ngIf="contactForm.get('name').hasError('required') && contactForm.get('name').touched">*Name is required.</p>
+                                </div>
+                                <div class="formGroup">
+                                    <label for="Contact">Contact</label>
+                                    <input type="number" class="input" placeholder="Enter your contact number" formControlName="contact" >
+                                    <p class="error" *ngIf="contactForm.get('contact').hasError('required') && contactForm.get('contact').touched">*Contact number is required.</p>
+                                </div>
+                                <div class="formGroup">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="input" placeholder="Enter your email" formControlName="email" >
+                                    <p class="error" *ngIf="contactForm.get('email').hasError('required') && contactForm.get('email').touched">*Email is required.</p>
+                                </div>
+                                <div class="formGroup">
+                                    <label for="message">Message</label>
+                                    <textarea style="resize:none" rows="3" cols="80" class="input" placeholder="Enter your Message" formControlName="message" ></textarea>
+                                    <!-- <p class="error" *ngIf="contactForm.get('contact').hasError('required') && contactForm.get('contact').touched">*Message is required.</p> -->
+                                </div>
+                                <div class="buttongroup">
+                                    <button [ngClass]="contactForm.valid  ? 'submit' : ''" [ngStyle]="{'border':contactForm.valid ? '1px solid #0F298B' : '', 'color': contactForm.valid ? '#0F298B' : '#0F298B','padding-inline': submitted ? '25px' : '30px'}" (click)="submit()">
+                                        Get in Touch
+                                        <mat-spinner *ngIf="submitted" [diameter]="'22'"></mat-spinner>
+                                    </button>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 .body{
     width: 100%;
-    height: 100%;
+    // height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@
     height: 100%;
     max-width: 100%;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -39,7 +39,13 @@
     height: 450px;
     margin-bottom: 70px;
     background-color: whitesmoke;
+    // background-color: #0F298B;
+    color: #0F298B;
+    // color: white;
     padding: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
 }
 .image,.right{
     max-width: 100%;
@@ -52,6 +58,10 @@
 }
 .right{
     row-gap: 30px;
+    .details{
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
 .right .name{
     font-size: 35px;
@@ -60,7 +70,7 @@
 .image img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 20px;
 }
 .links{
@@ -86,4 +96,45 @@
 .footer{
     width: 100%;
     margin-top: 50px;
+}
+
+
+
+
+@media only screen and (max-width:768px){
+    .cardsContainer{
+        padding: 10px;
+    }
+    .agentcard{
+        display: flex;
+        flex-direction: column !important;
+        max-width: 400px;
+        width: 100%;
+        height: 100%;
+        padding-block: 20px;
+        row-gap: 20px;
+    }
+    .image,.right{
+        max-width: 100%;
+        width: 100%;
+    }
+    .image{
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 20px;
+    }
+    .right{
+        align-items: center;
+        .details{
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
 }
