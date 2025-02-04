@@ -31,14 +31,14 @@
 
             </div>
 
-            <div class="amentities">
+            <div class="amenities">
                 <div class="container">
-                    <div class="amentitytitle">{{Project.amentities.title}}</div>
-                    <div class="text">{{Project.amentities.text}}</div>
+                    <div class="amentitytitle">Exclusive amenities</div>
+                    <div class="text">Explore state-of-art amenities</div>
                     <div class="data">
-                        <div class="card" *ngFor="let amentity of Project.amentities.data">
+                        <div class="card" *ngFor="let amentity of Project.amenities.data">
                             <div class="image">
-                                <img [src]="amentity.image" alt="amentity image">
+                                <img [src]="'assets/' + amentity.type" alt="amentity image">
                             </div>
                             <div class="name">{{amentity.name}}</div>
                         </div>
@@ -47,7 +47,7 @@
 
             </div>
 
-            <div class="amentities availableFlats">
+            <div class="amenities availableFlats">
                 <div class="container">
                     <div class="amentitytitle">{{Project.available.title}}</div>
                     <div class="text">{{Project.available.text}}</div>
