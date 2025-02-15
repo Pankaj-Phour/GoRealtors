@@ -5,7 +5,11 @@
 export const environment = {
   production: false,
 
-  Url : 'https://gorealtors.onrender.com'
+  // Live Url 
+  Url : 'https://gorealtors-grfc.onrender.com'
+
+  // Local Url 
+  // Url : 'http://localhost:3000'
 
 };
 
