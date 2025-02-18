@@ -4,8 +4,7 @@
             <div class="cardsContainer">
             <div class="agentcard" *ngFor="let agent of agents;let i = index"[ngStyle]="{flexDirection: i%2!==1 ? 'row' : 'row-reverse'}">
                 <div class="image">
-                    <!-- <img [src]="'https://drive.google.com/uc?id='+agent.image | safe"> -->
-                     <iframe [src]="'https://drive.google.com/uc?id='+agent.image | safe" style="height: 200px;width: 200px;aspect-ratio: 4/3;pointer-events: none;"></iframe>
+                    <img [src]="agent.image">
                 </div>
                 <div class="right">
                 <div class="name">{{agent.name}}</div>
