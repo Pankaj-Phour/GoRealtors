@@ -39,19 +39,28 @@ export class TeamComponent implements OnInit {
 
   getStaffList(){
     this._api.getStaffList('/allAgents').subscribe((res:any)=>{
-      console.log("List of staff ",res);
       if(res && !res.error){
         this.agents = res.response;
-        for(let agent of this.agents){
-          // agent['newImage'] = 'https://drive.google.com/uc?id=YOUR_FILE_ID'
-        // agent['newImage'] = agent.image.substring(0,agent.image.length-17) + 'preview?embedded=true';
-        // agent['newImage'] = this.sanitizer.bypassSecurityTrustResourceUrl(agent['newImage']);
-        // console.log(agent['newImage']['changingThisBreaksApplicationSecurity']);
-          
-          // agent['newImage'] = this.sanitizer.bypassSecurityTrustResourceUrl(agent.image);
-        }
       }
     })
   }
 
+  contactAgent(agent:any,type:string){
+    let link;
+    if(type == 'call'){
+      link = `tel:+91 ${agent.mobile}`;
+    }
+    else if(type == 'email'){
+      link = `mailTo:${agent.email}`;
+      
+    }
+    else if(type == 'whatsapp'){
+      link = `http://wa.me/91${agent.whatsapp}`;
+
+    }
+    else{
+      link = agent[type];
+    }
+    window.open(link,'_blank');
+  }
 }
