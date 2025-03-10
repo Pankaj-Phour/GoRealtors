@@ -8,6 +8,7 @@ import { TeamComponent } from './team/team.component';
 import { SingleDetailsComponent } from './single-details/single-details.component';
 import { AllProjectComponent } from './all-project/all-project.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {
@@ -41,11 +42,15 @@ const routes: Routes = [
   {
     path:'all-projects',
     component: AllProjectComponent
+  },
+  {
+    path:'about',
+    component: AboutComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{useHash:true})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -8,15 +8,15 @@
                 </div>
                 <div class="right">
                 <div class="name">{{agent.name}}</div>
-                <div class="details">{{agent.details}}</div>
+                <div class="details">{{agent.about}}</div>
                 <div class="links">
-                    <div class="link">
+                    <div class="link" (click)="contactAgent(agent,'email')">
                         <img src="assets/emailBlue.png" height="25px" width="25px">
                     </div>
-                    <div class="link">
+                    <div class="link" (click)="contactAgent(agent,'call')">
                         <img src="assets/phoneBlue.png" height="25px" width="25px">
                     </div>
-                    <div class="link">
+                    <div class="link" (click)="contactAgent(agent,'whatsapp')">
                         <img src="assets/whatsappBlue.png" height="25px" width="25px">
                     </div>
                 </div>
