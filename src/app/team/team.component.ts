@@ -38,7 +38,7 @@ export class TeamComponent implements OnInit {
 
 
   getStaffList(){
-    this._api.getStaffList('/allAgents').subscribe((res:any)=>{
+    this._api.getApi('/allAgents').subscribe((res:any)=>{
       if(res && !res.error){
         this.agents = res.response;
       }

@@ -20,22 +20,18 @@ export class ApiService {
     this._notify.next(data);
   }
 
-  clientData(endpoint:any,params:any){
-    return this.http.post(environment.Url + endpoint,params)
-  }
-
+  
   @Output() closeSidebarEmitter = new EventEmitter();
-
+  
   closeSideBar(data:boolean){
     this.closeSidebarEmitter.emit(data)
   }
-
-
-  getPropertyList(endpoint:String){
-    return this.http.get(environment.Url + endpoint)
+  
+  postApi(endpoint:any,params:any){
+    return this.http.post(environment.Url + endpoint,params)
   }
 
-  getStaffList(endpoint:String){
+  getApi(endpoint:String){
     return this.http.get(environment.Url + endpoint)
   }
   

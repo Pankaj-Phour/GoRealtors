@@ -70,7 +70,7 @@ projects:any = [
 
 
   getProperties(){
-    this._api.getPropertyList('/allProperties').subscribe((res:any)=>{
+    this._api.getApi('/allProperties').subscribe((res:any)=>{
       console.log("Hello from api response",res);
       
     })
