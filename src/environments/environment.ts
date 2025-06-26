@@ -7,10 +7,10 @@ export const environment = {
 
 
   // Live Url 
-  // Url : 'https://gorealtors-grfc.onrender.com'
+  Url : 'https://gorealtors-grfc.onrender.com'
 
   // Local Url 
-  Url : 'http://localhost:3000'
+  // Url : 'http://localhost:3000'
 
 
 };

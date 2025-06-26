@@ -38,7 +38,7 @@ propertyData:any = [];
 
   getProperties(){
     this._api.getApi('/allProperties').subscribe((res:any)=>{
-      if(res && res.error){
+      if(res && !res.error){
         console.log(res);
         this.propertyData = res.response;
         for(let item of res.response){
@@ -51,8 +51,25 @@ propertyData:any = [];
           else{
             this.projects[0].data.push(item);
           }
+          let arr = item.society_available_flats.map((item:any)=>{
+            let string:any;
+            if(item.flat_name.match('pent')){
+              string = 5
+            }
+            else{
+              string = +item.flat_name.split(' ')[0];
+            }
+            return string;
+          });
+          let arr2 = item.society_available_flats.map((item:any)=>{
+            let string:any;
+              string = +item.flat_size.split(' ')[0];
+            return string;
+          });
+          item['flats_data'] = Math.min(arr) + '-' + Math.max(arr) + ' BHK';
+          item['available_sizes'] = Math.min(arr2) + '-' + Math.max(arr2) + ' Sq.ft.';
         }
-        console.log(this.projects);
+        console.log(this.projects,this.propertyData);
         
       }
     })
