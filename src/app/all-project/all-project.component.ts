@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-all-project',
@@ -8,7 +9,7 @@ import { ApiService } from '../api.service';
 })
 export class AllProjectComponent implements OnInit {
 propertyData:any = [];
-  constructor(private _api:ApiService) { }
+  constructor(private _api:ApiService,private router:Router) { }
 
   ngOnInit(): void {
     this.getProperties();
@@ -53,7 +54,7 @@ propertyData:any = [];
           }
           let arr = item.society_available_flats.map((item:any)=>{
             let string:any;
-            if(item.flat_name.match('pent')){
+            if(item.flat_name.match('Pent')){
               string = 5
             }
             else{
@@ -66,13 +67,16 @@ propertyData:any = [];
               string = +item.flat_size.split(' ')[0];
             return string;
           });
-          item['flats_data'] = Math.min(arr) + '-' + Math.max(arr) + ' BHK';
-          item['available_sizes'] = Math.min(arr2) + '-' + Math.max(arr2) + ' Sq.ft.';
+          item['flats_data'] = Math.min(...arr) + '-' + Math.max(...arr) + ' BHK';
+          item['available_sizes'] = Math.min(...arr2) + '-' + Math.max(...arr2) + ' Sq.ft.';
         }
-        console.log(this.projects,this.propertyData);
-        
       }
     })
+  }
+
+  singleDetails(data:any){
+    localStorage.setItem('targetData',JSON.stringify(data));
+    this.router.navigate(['/single-details'])
   }
 
 }

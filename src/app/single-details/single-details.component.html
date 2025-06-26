@@ -4,7 +4,7 @@
             <div class="topImage">
                 <div class="mainImage">
                     
-                            <img [src]="Project.allImages[selectedImage].image" alt="Go realtors Projects on dwarka expressway">
+                            <img [src]="Project.society_images[selectedImage].url" alt="Go realtors Projects on dwarka expressway">
                         
                 <!-- <swiper-container class="mySwiper" #swiper (slidechange)="slideChange($event)" pagination="true" navigation="true" direction="horizontal">
                     <ng-container *ngFor="let data of Project.allImages">
@@ -16,16 +16,16 @@
                       </swiper-container> -->
                 </div>
                 <div class="allImages">
-                    <img [src]="data.image" height="80px" width="90px" alt="Raheja atharva images" *ngFor="let data of Project.allImages;let i = index" (click)="selectImage(i)" [ngStyle]="{'border':selectedImage === i ? '2px solid gray' : '2px solid transparent'}">
+                    <img [src]="data.url" height="80px" width="90px" alt="Raheja atharva images" *ngFor="let data of Project.society_images;let i = index" (click)="selectImage(i)" [ngStyle]="{'border':selectedImage === i ? '2px solid gray' : '2px solid transparent'}">
                 </div>
             </div>
 
             <div class="title">
-                <div class="name">{{Project.name}}</div>
+                <div class="name">{{Project.society_name}}</div>
                 <div class="location">
                     <img src="https://icons-for-free.com/iconfiles/png/512/map+marker-1325051861362825518.png" height="20px" width="40px">
                     <div class="text">
-                        {{Project.location}}
+                        {{Project.society_location}}
                     </div>
                 </div>
 
@@ -36,7 +36,7 @@
                     <div class="amentitytitle">Exclusive amenities</div>
                     <div class="text">Explore state-of-art amenities</div>
                     <div class="data">
-                        <div class="card" *ngFor="let amentity of Project.amenities.data">
+                        <div class="card" *ngFor="let amentity of Project.society_amenities">
                             <div class="image">
                                 <img [src]="'assets/' + amentity.type" alt="amentity image">
                             </div>
@@ -49,15 +49,38 @@
 
             <div class="amenities availableFlats">
                 <div class="container">
-                    <div class="amentitytitle">{{Project.available.title}}</div>
-                    <div class="text">{{Project.available.text}}</div>
+                    <div class="amentitytitle">Available Flats</div>
+                    <!-- <div class="text">click to view details</div> -->
                     <div class="data">
-                        <div class="flatCard" *ngFor="let flat of Project.available.flats">
+                        <div class="flatCard" *ngFor="let flat of Project.society_available_flats">
                             <div class="image">
-                                <img [src]="flat.image" alt="Flat Layout">
+                                <img [src]="flat.flat_image" alt="Flat Layout">
                             </div>
                             <div class="bottom">
-
+                                <div class="name line">
+                                    <div class="left">
+                                        Flat Type
+                                    </div>
+                                    <div class="right">
+                                        {{flat.flat_name}}
+                                    </div>
+                                </div>
+                                <div class="size line">
+                                    <div class="left">
+                                        Flat Size (Sq.ft.)
+                                    </div>
+                                    <div class="right">
+                                        {{flat.flat_size}}
+                                    </div>
+                                </div>
+                                <div class="price line">
+                                    <div class="left">
+                                        Flat Price
+                                    </div>
+                                    <div class="right">
+                                        Rs. {{flat.flat_price}}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

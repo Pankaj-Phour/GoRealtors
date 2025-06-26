@@ -6,7 +6,7 @@
                     <div class="heading">{{property.heading}}</div>
                     <div class="subHeading">{{property.subHeading}}</div>
                 </div>
-            <div class="card" *ngFor="let card of property.data" routerLink="/single-details">
+            <div class="card" *ngFor="let card of property.data" (click)="singleDetails(card)">
                 <div class="topImage">
                     <img [src]="card.society_images[0].url">
                 </div>
